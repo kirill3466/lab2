@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>форма</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;    
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <h1>Пример регистрации сайта</h1>
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="url">URL-адрес сайта:</label>
+        <input type="url" id="url" name="url" required>
+
+        <label for="site-name">Название сайта:</label>
+        <input type="text" id="site-name" name="site-name" required>
+
+        <label for="site-description">Описание сайта:</label>
+        <textarea id="site-description" name="site-description" required></textarea>
+
+        <label for="site-theme">Тема сайта:</label>
+        <select id="site-theme" name="site-theme">
+            <option value="theme1">Тема не выбрана</option>
+        </select>
+
+        <label for="site-image">Баннер 88x31</label>
+        <input type="file" id="site-image" name="site-image">
+
+        <button type="reset">Очистить</button>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #data {
+            display: flex;
+            flex-wrap: wrap;
+            width: 390px;
+        }
+
+        #data label {
+            flex: 0 0 100px;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        #data input, #data select {
+            flex: 1;
+            margin-bottom: 10px;
+        }
+
+        #data input[type="checkbox"] {
+            flex: 0 0 auto;
+        }
+
+        #buttons input {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>ЗАО Птицефабрика №1</h1>
+    <form action="">
+        <div id="data">
+            <label for="name">Фамилия</label>
+            <input type="text">
+            <label for="initials">Инициалы</label>
+            <input type="text">
+            <label for="password">Пароль</label>
+            <input type="password">
+            <label for="address">Адрес</label>
+            <input type="text">
+            <label for="quantity">Количество</label>
+            <input type="number">
+
+            <label for="type">Тип</label>
+            <select name="type">
+                <option value="1">Куриные</option>
+            </select>
+            <select name="type2">
+                <option value="1">Отборные</option>
+            </select>
+
+            <div>
+                <label for="">Доставка</label>
+                <input type="radio" name="mail" id="">
+                <label for="mail">Почтой</label>
+                <input type="radio" name="email" id="">
+                <label for="email">Телефон</label>
+                <input type="radio" name="courier" id="">
+                <label for="courier">Курьером</label>
+            </div>
+            
+            <div>
+                <label for="">Требуется накладная</label>
+                <input type="checkbox" name="" id="">
+            </div>
+
+            <div>
+                <label for="extra-info">Дополнительная информация</label>
+                <textarea name="" id=""></textarea>
+            </div>
+            
+
+            <input type="button" value="Заказать">
+            <input type="button" value="Отменить">
+        </div>
+    </form>
+</body>
+</html>
